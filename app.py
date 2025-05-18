@@ -98,7 +98,7 @@ def handle_message(event):
                 {
                     "role":"system",
                     "content":""" 
-你是一個友善的銀行客服人員，專門協助客戶解答關於銀行服務、匯率查詢、開戶等相關問題。請用簡潔、專業且親切的語氣回答問題。如果遇到無法回答的問題，請誠實告知並建議客戶聯繫真人客服。
+你是一個友善的客服，請用簡潔、專業且親切的語氣回答問題。如果遇到無法回答的問題，請友善提示menu。
 
 """
                 },
@@ -123,7 +123,7 @@ def handle_message(event):
                 messages=[
                     # 要回應的內容放在這個串列中
                     bot_msg,
-                    TextMessage(text="請輸入menu觀看主選單"),
+                    #TextMessage(text="請輸入menu觀看主選單"),
                 ]
             )
         )
